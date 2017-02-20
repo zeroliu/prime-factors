@@ -1,12 +1,8 @@
 const generatePrimeFactors = function(n) {
   const primes = [];
-  if (n > 1) {
-    if (n % 2 === 0) {
-      primes.push(2);
-      n /= 2;
-    }
-    if (n > 1) {
-      primes.push(n);
+  for (candidate = 2; n > 1; candidate++) {
+    for (; n % candidate === 0; n /= candidate) {
+      primes.push(candidate);
     }
   }
   return primes;
