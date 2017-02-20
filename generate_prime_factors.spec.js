@@ -8,5 +8,9 @@ describe('generatePrimeFactors', () => {
   it('generates [2] for 2', () => {
     expect(generatePrimeFactors(2)).toEqual([ 2 ]);
   });
+
+  it('generates [3] for 3', () => {
+    expect(generatePrimeFactors(3)).toEqual([ 3 ]);
+  });
 });
 
