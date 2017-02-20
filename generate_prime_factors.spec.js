@@ -12,5 +12,13 @@ describe('generatePrimeFactors', () => {
   it('generates [3] for 3', () => {
     expect(generatePrimeFactors(3)).toEqual([ 3 ]);
   });
+
+  it('generates [2, 2] for 4', () => {
+    expect(generatePrimeFactors(4)).toEqual([ 2, 2 ]);
+  });
+
+  it('generates [2, 3] for 6', () => {
+    expect(generatePrimeFactors(6)).toEqual([ 2, 3 ]);
+  });
 });
 
